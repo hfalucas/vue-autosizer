@@ -1,0 +1,55 @@
+.v-autosize-input__container {
+    vertical-align: baseline;
+    position: relative;
+    background: transparent;
+    flex: 0 1 auto;
+    min-width: 1px;
+    padding: 0 1px;
+    overflow: hidden;
+}
+
+.v-autosize-input__field,
+.v-autosize-input__shadow {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 20px;
+    text-rendering: optimizeSpeed;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.v-autosize-input__field {
+    background: transparent;
+    border-radius: 0;
+    display: block;
+    height: 100%;
+    outline: 0;
+    overflow: hidden;
+    position: absolute;
+    resize: none;
+    top: 0;
+    width: 100%;
+    white-space: pre;
+}
+
+.v-autosize-input__shadow {
+    box-sizing: border-box;
+    min-height: 13px;
+    overflow: hidden;
+    visibility: hidden;
+    white-space: pre;
+}
+
+.v-autosize-textarea {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    resize: none;
+    min-width: 20px;
+    min-height: 20px;
+    overflow: hidden;
+    text-rendering: optimizeSpeed;
+}
