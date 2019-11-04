@@ -33,9 +33,10 @@ export default {
         }
     },
 
-    async mounted () {
-        await this.$nextTick()
-        this.styles = { 'height': `${this.$el.scrollHeight}px` }
+    mounted () {
+        this.$nextTick(_ => {
+            this.styles = { 'height': `${this.$el.scrollHeight}px` }
+        })
     },
 
     methods: {
