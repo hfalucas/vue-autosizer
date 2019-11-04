@@ -10,5 +10,5 @@ export { AutosizeInput, AutosizeTextarea }
 export default install
 
 if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(plugin)
+    window.Vue.use(install)
 }

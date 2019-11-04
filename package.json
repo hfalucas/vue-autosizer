@@ -1,6 +1,6 @@
 {
     "name": "vue-autosizer",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "A light replacement for built-in <textarea> and <input> elements allowing them to automatically grow to fit the content.",
     "keywords": [
         "vue",
