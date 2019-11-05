@@ -1,0 +1,12 @@
+.wrapper {
+    width: 300px;
+    box-sizing: border-box;
+}
+.auto-textarea {
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 10px;
+    box-shadow: 0px 4px 10px -8px black;
+}
+

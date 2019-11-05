@@ -1,5 +1,5 @@
 # Vue Autosizer
-A **light** ([2.2kB](https://bundlephobia.com/result?p=vue-autosizer@0.1.2)) and **dependency-free**  replacement for built-in `<textarea>` and `<input>` elements allowing them to automatically grow to fit the content.
+A **light** ([2.2kB](https://bundlephobia.com/result?p=vue-autosizer@0.1.4)) and **dependency-free**  replacement for built-in `<textarea>` and `<input>` elements allowing them to automatically stretch to fit the content.
 
 # Demo
 [Edit on JSFiddle ](https://jsfiddle.net/hfalucas/3stdbkrg/)

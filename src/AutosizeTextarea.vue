@@ -1,5 +1,5 @@
 <template>
-<textarea class="v-autosize-textarea" v-bind="$attrs" v-on="listeners" :value="value" :style="styles"></textarea>
+<textarea class="v-autosize-textarea" v-bind="$attrs" v-on="listeners" :value="value"></textarea>
 </template>
 
 <script>
@@ -12,10 +12,6 @@ export default {
         }
     },
 
-    data: () => ({
-        styles: {}
-    }),
-
     computed: {
         /**
          * Forward all parent event listeners and override
@@ -25,8 +21,8 @@ export default {
          */
         listeners () {
             const input = (event) => {
-                this.resize(event)
                 this.$emit('input', event.target.value)
+                this.resize(event)
             }
 
             return { ...this.$listeners, input }
@@ -35,7 +31,7 @@ export default {
 
     mounted () {
         this.$nextTick(_ => {
-            this.styles = { 'height': `${this.$el.scrollHeight}px` }
+            this.$el.setAttribute('style', `height: ${this.$el.scrollHeight}px`)
         })
     },
 
@@ -47,7 +43,7 @@ export default {
          * @return {void}
          */
         resize ({ target }) {
-            target.style.height = 'auto'
+            target.style.height = '1px'
             target.style.height = `${target.scrollHeight}px`
         }
     }

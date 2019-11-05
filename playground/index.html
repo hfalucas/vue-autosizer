@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Autosizer Playground</title>
+    <link rel="stylesheet" href="../dist/vue-autosizer.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.min.js"></script>
+    <script src="../dist/vue-autosizer.umd.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <autosize-textarea class="auto-textarea" v-model="textareaText" placeholder="Cenas e coisas" />
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
