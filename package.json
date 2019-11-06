@@ -11,6 +11,7 @@
     "author": "Helder Lucas <helder@winio.io>",
     "scripts": {
         "build": "rollup -c --environment production",
+        "dev": "rollup -c -w",
         "prepublish": "npm run build && npm run build:css",
         "build:css": "postcss src/styles.css -o dist/vue-autosizer.min.css --env production"
     },
